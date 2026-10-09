@@ -1,0 +1,22 @@
+{
+  "name": "reze-beside",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Your characters, beside you, on the desktop.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "app": "tauri dev",
+    "pack": "tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "reze-engine": "^0.56.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "typescript": "^5",
+    "vite": "^8"
+  }
+}

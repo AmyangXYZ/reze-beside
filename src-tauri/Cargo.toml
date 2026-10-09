@@ -1,0 +1,17 @@
+[package]
+name = "reze-beside"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# `macos-private-api` is what makes a transparent macOS window legal. Without
+# it the window is composited opaque and every other setting here is moot.
+tauri = { version = "2", features = ["macos-private-api", "tray-icon", "image-png"] }
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
